@@ -1,0 +1,47 @@
+
+<div class="card-container">
+
+
+  <!--<md-card class="project-card" *ngFor="let project of projects"[ngStyle]="{'background-image':'url(' + project.listUrlImage[2] + ')'}">-->
+  <md-card *ngFor="let project of projects">
+
+    <!--<md-card-title>{{project.nameProject}}</md-card-title>-->
+    <!--<md-card-subtitle>{{project.authProject}}</md-card-subtitle>-->
+    <md-card-header>
+      <img md-card-avatar src="{{project.urlImage}}">
+      <md-card-title>{{project.nameProject}}</md-card-title>
+      <md-card-subtitle>{{project.authProject}}</md-card-subtitle>
+    </md-card-header>
+
+    <md-card-content>
+
+      <a [routerLink]="['/project', project.idProject]">
+        <img md-card-lg-image alt="Main image" src="{{project.urlImage}}">
+      </a>
+
+
+
+
+    </md-card-content>
+
+
+
+    <!--<div class="project-div" >-->
+
+      <!--<a [routerLink]="['/projectdetail', project.idProject]">-->
+        <!--&lt;!&ndash;<img [src]="project.urlImage" alt="">&ndash;&gt;-->
+        <!--meomeo-->
+
+      <!--</a>-->
+
+
+
+      <!--&lt;!&ndash;<h3>{{project.nameProject}}</h3>&ndash;&gt;-->
+      <!--&lt;!&ndash;<img [src]='project.listUrlImage[2]' alt="">&ndash;&gt;-->
+    <!--</div>-->
+
+
+
+  </md-card>
+
+</div>

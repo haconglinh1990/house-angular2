@@ -18,8 +18,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css",
-        "material2-app-theme.scss"
+        "assets/styles.css",
+        "assets/material2-app-theme.scss"
       ],
       "scripts": [],
       "environments": {

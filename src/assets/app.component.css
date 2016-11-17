@@ -1,0 +1,12 @@
+
+
+/*md-sidenav-layout{*/
+  /*width: 100vw;*/
+/*}*/
+.app-content{
+  display: inline-block;
+}
+
+md-sidenav-layout{
+  background-color: beige;
+}

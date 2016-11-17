@@ -1,0 +1,17 @@
+{
+  "code": 200,
+  "message": "OK",
+  "result": {
+    "idProject":1,
+    "nameProject": "Meomeo picture",
+    "authProject": "meomeo",
+    "year": "2014",
+    "typeImage": "house",
+    "description": "meomeo test",
+    "listUrlImage": ["http://www.mikiyakobayashi.com/projects/furniture/upload/05_2W.jpg",
+      "http://www.mikiyakobayashi.com/projects/furniture/upload/_MG_4138W.jpg",
+      "http://www.mikiyakobayashi.com/projects/furniture/upload/_MG_2595W.jpg"
+    ]
+  }
+}
+

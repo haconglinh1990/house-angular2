@@ -1,0 +1,9 @@
+.right-div{
+  right: 0;
+  float: right;
+  width: 15%;
+}
+
+.prjectdetail-container{
+  position: relative;
+}

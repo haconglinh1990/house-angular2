@@ -1,0 +1,83 @@
+
+
+
+/*.project-card{*/
+  /*!*max-width: 25%;*!*/
+  /*!*min-width: 216px;*!*/
+  /*width: 25%;*/
+
+
+  /*float: left;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+/*}*/
+
+
+.card-container{
+
+}
+
+md-card{
+  /*margin: 5px !important;*/
+  margin-top : 1% !important;
+  margin-left : 1% !important;
+
+  padding: 0px !important;
+  float: left;
+  width: 24%;
+}
+
+md-card-header, md-card-content{
+  margin: 10px !important;
+}
+
+/*md-card-content{*/
+  /**/
+/*}*/
+
+[md-card-lg-image] {
+  width: 100%;
+  height: auto;
+  margin-top: 1px;
+}
+
+
+md-card {
+  display: block;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+/*.project-div{*/
+  /*max-width: 100%;*/
+/*}*/
+
+/*.project-div img{*/
+  /*max-width: 100%;*/
+
+
+/*}*/
+
+/*.project-div h3{*/
+/*position: absolute;*/
+/*z-index: 1;*/
+/*}*/
+
+
+/*!*md-card {*!*/
+
+/*!*position:relative;*!*/
+/*!*padding: $md-card-default-padding;*!*/
+/*!*border-radius: $md-card-border-radius;*!*/
+/*!*box-shadow: $md-shadow-bottom-z-1;*!*/
+/*!*font-family: $font-family;*!*/
+/*!*background: white;*!*/
+/*}*/
+
+/*@media only screen and (max-width: 846px) and (min-width: 630px){*/
+/*.large{*/
+/*display: none;*/
+/*}*/
+/*}*/
