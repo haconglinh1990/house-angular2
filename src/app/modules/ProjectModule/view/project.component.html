@@ -1,47 +1,122 @@
 
 <div class="card-container">
 
+  <div class="colum cloum1">
+    <md-card *ngFor="let project of projects | projectFilter:listFilter">
+      <md-card-header>
+        <img md-card-avatar src="{{project.urlImage}}">
+        <md-card-title>{{project.nameProject}}</md-card-title>
+        <md-card-subtitle>{{project.authProject}}</md-card-subtitle>
+      </md-card-header>
+
+      <md-card-content>
+
+        <a [routerLink]="['/project', project.idProject]">
+          <img md-card-lg-image alt="Main image" src="{{project.urlImage}}">
+        </a>
+
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="colum cloum2">
+    <md-card *ngFor="let project of projectsPart1 | projectFilter:listFilter">
+
+      <md-card-header>
+        <img md-card-avatar src="{{project.urlImage}}">
+        <md-card-title>{{project.nameProject}}</md-card-title>
+        <md-card-subtitle>{{project.authProject}}</md-card-subtitle>
+      </md-card-header>
+
+      <md-card-content>
+
+        <a [routerLink]="['/project', project.idProject]">
+          <img md-card-lg-image alt="Main image" src="{{project.urlImage}}">
+        </a>
+
+      </md-card-content>
+
+    </md-card>
+  </div>
+  <div class="colum cloum3">
+    <md-card *ngFor="let project of projectsPart2 | projectFilter:listFilter">
+
+      <md-card-header>
+        <img md-card-avatar src="{{project.urlImage}}">
+        <md-card-title>{{project.nameProject}}</md-card-title>
+        <md-card-subtitle>{{project.authProject}}</md-card-subtitle>
+      </md-card-header>
+
+      <md-card-content>
+
+        <a [routerLink]="['/project', project.idProject]">
+          <img md-card-lg-image alt="Main image" src="{{project.urlImage}}">
+        </a>
+
+      </md-card-content>
+
+    </md-card>
+  </div>
+  <div class="colum cloum4">
+    <md-card *ngFor="let project of projectsPart3 | projectFilter:listFilter">
+
+      <md-card-header>
+        <img md-card-avatar src="{{project.urlImage}}">
+        <md-card-title>{{project.nameProject}}</md-card-title>
+        <md-card-subtitle>{{project.authProject}}</md-card-subtitle>
+      </md-card-header>
+
+      <md-card-content>
+
+        <a [routerLink]="['/project', project.idProject]">
+          <img md-card-lg-image alt="Main image" src="{{project.urlImage}}">
+        </a>
+
+      </md-card-content>
+
+    </md-card>
+  </div>
+
 
   <!--<md-card class="project-card" *ngFor="let project of projects"[ngStyle]="{'background-image':'url(' + project.listUrlImage[2] + ')'}">-->
-  <md-card *ngFor="let project of projects">
+  <!--<md-card *ngFor="let project of projects">-->
 
-    <!--<md-card-title>{{project.nameProject}}</md-card-title>-->
-    <!--<md-card-subtitle>{{project.authProject}}</md-card-subtitle>-->
-    <md-card-header>
-      <img md-card-avatar src="{{project.urlImage}}">
-      <md-card-title>{{project.nameProject}}</md-card-title>
-      <md-card-subtitle>{{project.authProject}}</md-card-subtitle>
-    </md-card-header>
+    <!--&lt;!&ndash;<md-card-title>{{project.nameProject}}</md-card-title>&ndash;&gt;-->
+    <!--&lt;!&ndash;<md-card-subtitle>{{project.authProject}}</md-card-subtitle>&ndash;&gt;-->
+    <!--<md-card-header>-->
+      <!--<img md-card-avatar src="{{project.urlImage}}">-->
+      <!--<md-card-title>{{project.nameProject}}</md-card-title>-->
+      <!--<md-card-subtitle>{{project.authProject}}</md-card-subtitle>-->
+    <!--</md-card-header>-->
 
-    <md-card-content>
+    <!--<md-card-content>-->
 
-      <a [routerLink]="['/project', project.idProject]">
-        <img md-card-lg-image alt="Main image" src="{{project.urlImage}}">
-      </a>
-
-
-
-
-    </md-card-content>
-
-
-
-    <!--<div class="project-div" >-->
-
-      <!--<a [routerLink]="['/projectdetail', project.idProject]">-->
-        <!--&lt;!&ndash;<img [src]="project.urlImage" alt="">&ndash;&gt;-->
-        <!--meomeo-->
-
+      <!--<a [routerLink]="['/project', project.idProject]">-->
+        <!--<img md-card-lg-image alt="Main image" src="{{project.urlImage}}">-->
       <!--</a>-->
 
 
 
-      <!--&lt;!&ndash;<h3>{{project.nameProject}}</h3>&ndash;&gt;-->
-      <!--&lt;!&ndash;<img [src]='project.listUrlImage[2]' alt="">&ndash;&gt;-->
-    <!--</div>-->
+
+    <!--</md-card-content>-->
 
 
 
-  </md-card>
+    <!--&lt;!&ndash;<div class="project-div" >&ndash;&gt;-->
+
+      <!--&lt;!&ndash;<a [routerLink]="['/projectdetail', project.idProject]">&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<img [src]="project.urlImage" alt="">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;meomeo&ndash;&gt;-->
+
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+
+
+
+      <!--&lt;!&ndash;&lt;!&ndash;<h3>{{project.nameProject}}</h3>&ndash;&gt;&ndash;&gt;-->
+      <!--&lt;!&ndash;&lt;!&ndash;<img [src]='project.listUrlImage[2]' alt="">&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+
+  <!--</md-card>-->
 
 </div>

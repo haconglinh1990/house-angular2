@@ -1,16 +1,13 @@
 <div class="projectdetail-container">
+
   <div class="list-image">
-
+    <md-card *ngFor="let urlImage of listUrlImage">
+      <img md-card-image alt="Main image" src="{{urlImage}}">
+    </md-card>
   </div>
-
-
-
 
   <div class="right-div">
     <md-card>
-
-
-      <p>{{nameTest}}</p>
 
       <md-card-title>{{projectDetail.nameProject}}</md-card-title>
       <md-card-subtitle>{{projectDetail.typeImage}}</md-card-subtitle>
@@ -20,10 +17,11 @@
 
 
         <md-card-header>
-          <img md-card-avatar src="{{projectDetail.listUrlImage[0]}}">
-          <md-card-title>{{projectDetail.authProject}}</md-card-title>
-          <md-card-subtitle>{{projectDetail.year}}</md-card-subtitle>
+          <img md-card-avatar src="{{listUrlImage[0]}}">
+          <md-card-title>Auth: {{projectDetail.authProject}}</md-card-title>
+          <md-card-subtitle>Year: {{projectDetail.year}}</md-card-subtitle>
         </md-card-header>
+
 
 
 

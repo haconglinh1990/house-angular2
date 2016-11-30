@@ -1,9 +1,7 @@
-import { Injectable } from '@angular/core';
 
-@Injectable()
-export class Config {
+export class API {
 
-  // Config URL API
+  // API URL API
 
 
     private endpointGateway = "https://api.dev.bontrax.com/v1/";

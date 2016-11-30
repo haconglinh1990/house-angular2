@@ -1,4 +1,4 @@
-import { HouseMaterialPage } from './app.po';
+import {HouseMaterialPage} from "./app.po";
 
 describe('house-material App', function() {
   let page: HouseMaterialPage;

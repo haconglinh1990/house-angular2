@@ -1,9 +1,26 @@
 .right-div{
-  right: 0;
   float: right;
-  width: 15%;
+  width: 24%;
+  height: 86vh;
+
 }
+
+.right-div md-card{
+  height: 100%;
+  padding: 0px;
+  text-align: center;
+}
+
 
 .prjectdetail-container{
   position: relative;
+}
+
+.list-image{
+  display: inline-block;
+  width: 75%;
+}
+
+.list-image md-card{
+  padding: 50px;
 }

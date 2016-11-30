@@ -1,27 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-
-import { AppComponent } from '../assets/app.component';
-import { FooterComponent } from './layout/basic/footer/footer.component';
+import {BrowserModule} from "@angular/platform-browser";
+import {NgModule} from "@angular/core";
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import {AppComponent} from "../assets/app.component";
 import {ApiCallHelper} from "./helper/ApiCallHelper";
 import {RouterModule} from "@angular/router";
-import { HomeComponent } from './layout/home/home.component';
+import {HomeComponent} from "./layout/home/home.component";
 import {ProjectComponent} from "./modules/ProjectModule/controller/project.component";
-import { HeaderComponent } from './layout/basic/header/header.component';
 import {ProjectModule} from "./modules/ProjectModule/project.module";
 import {MaterialModule} from "@angular/material";
-import {Config} from "./config/config";
-import {ProjectDetailComponent} from "./modules/ProjectModule/controller/projectdetail.component";
+import {API} from "./config/API";
+import {SearchService} from "./helper/SearchService";
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     HomeComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +32,7 @@ import {ProjectDetailComponent} from "./modules/ProjectModule/controller/project
     ),
     ProjectModule
   ],
-  providers: [Config, ApiCallHelper],
+  providers: [API, ApiCallHelper, SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

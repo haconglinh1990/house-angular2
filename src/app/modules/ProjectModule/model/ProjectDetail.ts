@@ -9,5 +9,6 @@ export interface IProjectDetail{
   year: string;
   typeImage: string;
   description: string;
-  listUrlImage: string[];
+  listUrlImage: Array<string>;
+  // listUrlImage: string[];
 }

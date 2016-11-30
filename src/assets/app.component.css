@@ -1,12 +1,32 @@
 
-
-/*md-sidenav-layout{*/
-  /*width: 100vw;*/
-/*}*/
-.app-content{
-  display: inline-block;
-}
-
 md-sidenav-layout{
-  background-color: beige;
+  display: inline-block;
+  width: 100%;
+  position: relative;
 }
+
+md-sidenav{
+  min-width: 15%;
+}
+
+.app-icon-button {
+  background: none;
+  color: white;
+  border: none;
+}
+
+#name-auth{
+  margin: auto;
+  color: white;
+}
+#name-project{
+  float: left;
+  margin-left: 10px;
+}
+#search-content{
+  float: right;
+}
+md-card{
+  margin-bottom: 5px;
+}
+
